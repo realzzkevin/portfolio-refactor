@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    border-width: 0;
+}
+/* defind colors use in the page.*/
+:root{
+ --mainColor: rgb(185, 204, 211);
+ --highLight: rgba(16, 19, 163, 0.575);
+ --frameColor: rgb(203, 223, 22);
+ --fontColor: rgb(8, 62, 207);
+ --fontColorLight:rgb(255, 255, 255);
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--mainColor);
+}
+
+/* reset font size for h1 to h6 tag. */ 
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+h6 {
+    font-size: 0.67em;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--highLight);
+    padding-top:10px;
+    padding-bottom: 5px;
+    color: var(--fontColorLight);
+}
+
+header h1 {
+    max-width: 25%;
+    padding-left: 5%;
+}
+
+ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+header nav ul{
+    /*display: inline-flex;
+    list-style-type: none;*/
+    text-align: right;
+}
+
+header li {
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+header li a {
+    color: var(--fontColorLight);
+}
+/* link won't change color after visited.*/
+header li a:visited {
+    color: var(--fontColorLight);
+}
+
+
+#photo {
+    background-image: url("../images/openroad.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+/*set photo dimension*/
+#my-photo {
+    height:5cm;
+    width: 5cm;
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+main{
+    margin: 10px 0 10px 0; 
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+/* custCards going to contain tow section, .side-bar and .detail */
+.custCards{
+    width: 97%;
+    height:auto;
+    padding: 10px;
+    /*background-color:var(--mainColor);*/
+    margin:10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+/* defined side bar element, it stays on the left side of screen.*/
+.side-bar {
+    width: 23%;
+    min-height: 100%;
+    /*background-color: var(--mainColor);*/
+    border-right-width: 5px;
+    border-color: chocolate;
+    border-style: solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: var(--fontColor);
+}
+/*.detail element, stays on the right side.*/
+.detail {
+    width:75%;
+    padding-left: 10px;
+}
+/*container of works card.*/
+#works-gallery{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height:auto;
+    
+}
+
+.works {
+    width: 650px;
+    height:300px;
+    margin: 10px;
+    border: 5px solid var(--frameColor);
+}
+/* place figcaption on lower left corner of works elements. */
+.works figcaption {
+    background-color: var(--frameColor);
+    width:fit-content;
+    height:fit-content;
+    padding: 10px;
+    color:var(--fontColor);
+    position: relative;
+    bottom:30%; left: 0%;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+.work-images {
+   width:100%;
+   max-height:100%;
+   object-fit:cover;
+   object-position: top;
+}
+
+#resume-link {
+    width:100%;
+    max-height: 150px;
+    object-fit: cover;
+    object-position: center;
+    padding: 20px;
+}
+
+#Contect-list ul {
+    width: 97%;
+    min-height: 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Contect-list li {
+
+    padding: 10px;
+}
+
+a:visited {
+    color:blue;
+}
+footer {
+    text-align: center;
+}
+
+/*for display larger than 993 px, the first work car will take the first row.*/
+@media screen and (min-width: 993px){
+
+    .works:first-child{
+        width:100%;
+        height:500px;
+    }
+
+    /* mousr hover to enlarge selected work, found unexpected issue. will fix it later  
+    .works:hover {
+        order:-1;
+        width: 100%;
+        height: 500px;
+    }
+
+    .work:hover .work-images {
+        width:100%;
+        max-height:100%;
+        object-fit:cover;
+        object-position: top;
+    }
+    
+*/
+}
+/* Adjust works custCards size for better fit for tablets. */
+@media screen and (max-width:992px){
+    
+    .works {
+        width: 46%;
+        height: 180px;
+    }
+}
+
+/*for smart phones, adjust page layout to form a single column. */
+@media screen and (max-width:768px){
+    /*list in hearder change flow direction to column*/ 
+    header ul {
+        flex-direction: column;        
+    }
+    
+    header li {
+        padding:5px;
+    }
+    
+    /* stack side-bar and detail element*/
+    .custCards{
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    .side-bar {
+        width: 97%;
+        border-bottom-width: 5px ;
+        border-right-width: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items:baseline;
+    }
+    
+    .detail {
+        width:97%;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .works {
+        width:100%;
+    }
+    /*Stack li element in Contect-list.*/
+    #Contect-list ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
