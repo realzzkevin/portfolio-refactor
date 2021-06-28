@@ -32,7 +32,8 @@ nav {
 
 .gallery-card {
     background-color: var(--darkGray);
-    margin: .5em;
+    margin: 5px;
+    padding-top: 2px;
  
 }
 

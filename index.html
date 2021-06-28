@@ -76,23 +76,27 @@
 
                     </div>
                 </div>
-
             </div>
-
         </section>
 
         <section class="mt-5" id="my-works">
             <h2 class="m-3 text-light">my works</h2>
-            <div class="container-fluid m-3 p-5 border border-light border-1 rounded-3">
-                <div class="my-works-carousel mt-2">
-                    <div id="MyWorkCaptions" class="carousel carousel-dark  slide" data-bs-ride="carousel">
+            <div class="container m-3 p-5 justify-content-center">
+                <div class="my-works-carousel mt-2 container">
+                    <div id="MyWorkCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#MyWorkCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#MyWorkCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                           <button type="button" data-bs-target="#MyWorkCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#MyWorkCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                            <a class="carousel-item active" href="https://realzzkevin.github.io/Dinner-Meal-Planner/" target="_blank">
+                            <a class="carousel-item active" href="https://blooming-caverns-27099.herokuapp.com/" target="_blank">
+                                <img src="./assets/images/Tech-Blog.png" class="d-block w-100" alt="dinner-planner">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </a>
+                            <a class="carousel-item" href="https://realzzkevin.github.io/Dinner-Meal-Planner/" target="_blank">
                                 <img src="./assets/images/Dinner_Planner.png" class="d-block w-100" alt="dinner-planner">
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
@@ -119,51 +123,60 @@
                     </div>
                 </div>
     
-                <div class="container mt-2 works-gallery">
+                <div class="container mt-2 works-gallery text-light">
                 
-                    <div class="row">
-                        <div class="card col-lg-4 border border-light border-1 rounded-1 gallery-card">
-                            <img src="" class="card-img-top" alt="" sizes="" srcset="">
-                            <div class="card-body">
-                                <h2 class="card-title"></h2>
-                                <p class="card-text"></p>
-                                <a class="btn btn-secondary" href="">View Repo</a>
+                    <div class="row justify-content-between">
+                        <div class="card col-md-5 border border-light border-1 rounded-1 gallery-card">
+                            <img src="./assets/images/Tech-Blog.png" class="card-img-top" alt="Tech-Blog">
+                            <div class="card-body text-light">
+                                <h2 class="card-title">Tech Blog</h2>
+                                <p class="card-text">A MVC Style blog site</p>
+                                <a class="btn btn-secondary" href="https://github.com/realzzkevin/Tech_Blog">View Repo</a>
                             </div>
                         </div>
     
-                        <div class="card col-lg-4 border border-light border-1 rounded-1 gallery-card">
-                            <img src="" class="card-img-top" alt="" sizes="" srcset="">
+                        <div class="card col-md-5 border border-light border-1 rounded-1 gallery-card">
+                            <img src="./assets/images/team-profile.png" class="card-img-top" alt="Dinner-Planner" sizes="" srcset="">
                             <div class="card-body">
-                                <h2 class="card-title"></h2>
-                                <p class="card-text"></p>
-                                <a class="btn btn-secondary" href="">View Repo</a>
+                                <h2 class="card-title">Team Profile Generator</h2>
+                                <p class="card-text">a command-line application to generates an html page base on user input.</p>
+                                <a class="btn btn-secondary" href="https://github.com/realzzkevin/Team-Profile-Generator">View Repo</a>
                             </div>
                         </div>
     
-                        <div class="card col-lg-4 border border-light border-1 rounded-1 gallery-card">
-                            <img src="" class="card-img-top" alt="" sizes="" srcset="">
+                        <div class="card col-md-5 border border-light border-1 rounded-1 gallery-card">
+                            <img src="./assets/images/Dinner_Planner.png" class="card-img-top" alt="" sizes="" srcset="">
                             <div class="card-body">
-                                <h2 class="card-title"></h2>
-                                <p class="card-text"></p>
-                                <a class="btn btn-secondary" href="">View Repo</a>
+                                <h2 class="card-title">Dinner Meal Planner</h2>
+                                <p class="card-text">A weekly Dinner planner. Provides ingredients lists for mead and cocktails. Using spoonacular API and thecocktaildb API.</p>
+                                <a class="btn btn-secondary" href="https://github.com/realzzkevin/Dinner-Meal-Planner">View Repo</a>
                             </div>
                         </div>
     
-                        <div class="card col-lg-4 border border-light border-1 rounded-1 gallery-card">
-                            <img src="" class="card-img-top" alt="" sizes="" srcset="">
+                        <div class="card col-md-5 border border-light border-1 rounded-1 gallery-card">
+                            <img src="./assets/images/weather-dashboard.png" class="card-img-top" alt="weather-dashboard">
                             <div class="card-body">
-                                <h2 class="card-title"></h2>
-                                <p class="card-text"></p>
-                                <a class="btn btn-secondary" href="">View Repo</a>
+                                <h2 class="card-title">Weather Dashboard</h2>
+                                <p class="card-text">Provide current weather and next 5-day forecast. Use OpenWeather API</p>
+                                <a class="btn btn-secondary" href="https://github.com/realzzkevin/Weather-Dashboard-ZZ">View Repo</a>
                             </div>
                         </div>
     
-                        <div class="card col-lg-4 border border-light border-1 rounded-1 gallery-card">
-                            <img src="" class="card-img-top" alt="" sizes="" srcset="">
+                        <div class="card col-md-5 border border-light border-1 rounded-1 gallery-card">
+                            <img src="./assets/images/workday-scheduler.png" class="card-img-top" alt="workday-scheduler">
                             <div class="card-body">
-                                <h2 class="card-title"></h2>
-                                <p class="card-text"></p>
-                                <a class="btn btn-secondary" href="">View Repo</a>
+                                <h2 class="card-title">Wrokday Scheduler</h2>
+                                <p class="card-text">Plan daily work. Save events and tasks for each hour.</p>
+                                <a class="btn btn-secondary" href="https://github.com/realzzkevin/Work-Day-Schedule-ZZ">View Repo</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-5 border border-light border-1 rounded-1 gallery-card">
+                            <img src="./assets/images/employees-database.png" class="card-img-top" alt="employees-database">
+                            <div class="card-body">
+                                <h2 class="card-title">Employees Database</h2>
+                                <p class="card-text">Command-line Content Management System for managing employees.</p>
+                                <a class="btn btn-secondary" href="https://github.com/realzzkevin/employee_database">View Repo</a>
                             </div>
                         </div>
     
