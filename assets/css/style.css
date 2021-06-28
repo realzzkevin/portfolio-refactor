@@ -37,6 +37,11 @@ nav {
  
 }
 
+.nav-pills .nav-item .active {
+    background-color: var(--darkGray);
+    color:antiquewhite;
+}
+
 /*for display larger than 993 px, the first work car will take the first row.*/
 @media screen and (min-width: 993px){
 
