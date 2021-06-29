@@ -30,9 +30,9 @@ This portfolio page has been rewrite use Bootstrap, to improve it's layout, styl
 
 ## Links
 
-[Portfolio github page](https://desolate-harbor-03118.herokuapp.com/)
+[Portfolio github page](https://github.com/realzzkevin/portfolio-refactor)
 
-[Portfolio](https://github.com/realzzkevin/Note_Taker)
+[Portfolio](https://realzzkevin.github.io/portfolio-refactor/)
 
 ## Screenshots
 
