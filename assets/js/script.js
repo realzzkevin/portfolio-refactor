@@ -1,12 +1,5 @@
-/*var tabEl = document.querySelectorAll('a[data-toggle="tab"]');
-
-tabEl.forEach(tab => {
-    tab.addEventListener('click', function (event) {
-        var targ = event.target;
-        tabEl.forEach(el =>{
-            el.classList.remove("active");
-        });
-        targ.classList.add("active");
-    })
-    
-});*/
+//example code form bootstrap. Enable all tooltip
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+});
