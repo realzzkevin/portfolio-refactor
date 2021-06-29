@@ -50,7 +50,8 @@ nav {
 .fas, .far, .fab {
     color: white;
 }
-/*for display larger than 993 px, the first work car will take the first row.*/
+
+
 @media screen and (min-width: 993px){
 
     .works:first-child{
@@ -63,7 +64,6 @@ nav {
     }
 
 }
-/* Adjust works custCards size for better fit for tablets. */
 
 @media screen and (max-width:992px){
     
@@ -77,7 +77,6 @@ nav {
     }
 }
 
-/*for smart phones, adjust page layout to form a single column. */
 
 @media screen and (max-width:768px){
     #nav-dropdown {
