@@ -1,4 +1,4 @@
-var tabEl = document.querySelectorAll('a[data-toggle="tab"]');
+/*var tabEl = document.querySelectorAll('a[data-toggle="tab"]');
 
 tabEl.forEach(tab => {
     tab.addEventListener('click', function (event) {
@@ -9,4 +9,4 @@ tabEl.forEach(tab => {
         targ.classList.add("active");
     })
     
-});
+});*/

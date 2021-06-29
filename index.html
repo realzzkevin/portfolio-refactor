@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>My Portfolio</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll">
     <header >
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container-fluid">                
@@ -60,7 +60,7 @@
     </header>
 
     <main class="container-lg">
-        <section class="mt-5" id="about-me">
+        <section class="mt-5 container-lg" id="about-me">
             <div id="bio card">
                 <div class="row">
                     <div class="col-md-5 d-flex align-items-center justify-content-center">
@@ -80,7 +80,7 @@
         </section>
 
         <section class="mt-5" id="my-works">
-            <h2 class=" text-light">my works</h2>
+            <h2 class=" text-light">My Works</h2>
             <div class="container p-5 justify-content-center">
                 <div class="my-works-carousel mt-2 container">
                     <div id="MyWorkCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -126,8 +126,8 @@
                 <div class="container mt-2 works-gallery text-light">
                 
                     <div class="row justify-content-between">
-                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card">
-                            <img src="./assets/images/Tech-Blog.png" class="card-img-top" alt="Tech-Blog">
+                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card bg-dark">
+                            <img src="./assets/images/Tech-Blog.png" class="card-img-top boorder rounded-3" alt="Tech-Blog">
                             <div class="card-body text-light">
                                 <h2 class="card-title">Tech Blog</h2>
                                 <p class="card-text">A MVC Style blog site</p>
@@ -135,8 +135,8 @@
                             </div>
                         </div>
     
-                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card">
-                            <img src="./assets/images/team-profile.png" class="card-img-top" alt="Dinner-Planner" sizes="" srcset="">
+                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card bg-dark">
+                            <img src="./assets/images/team-profile.png" class="card-img-top boorder rounded-3" alt="Dinner-Planner" sizes="" srcset="">
                             <div class="card-body">
                                 <h2 class="card-title">Team Profile Generator</h2>
                                 <p class="card-text">a command-line application to generates an html page base on user input.</p>
@@ -144,8 +144,8 @@
                             </div>
                         </div>
     
-                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card">
-                            <img src="./assets/images/Dinner_Planner.png" class="card-img-top" alt="" sizes="" srcset="">
+                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card bg-dark">
+                            <img src="./assets/images/Dinner_Planner.png" class="card-img-top boorder rounded-3" alt="" sizes="" srcset="">
                             <div class="card-body">
                                 <h2 class="card-title">Dinner Meal Planner</h2>
                                 <p class="card-text">A weekly Dinner planner. Provides ingredients lists for mead and cocktails. Using spoonacular API and thecocktaildb API.</p>
@@ -153,8 +153,8 @@
                             </div>
                         </div>
     
-                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card">
-                            <img src="./assets/images/weather-dashboard.png" class="card-img-top" alt="weather-dashboard">
+                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card bg-dark">
+                            <img src="./assets/images/weather-dashboard.png" class="card-img-top boorder rounded-3" alt="weather-dashboard">
                             <div class="card-body">
                                 <h2 class="card-title">Weather Dashboard</h2>
                                 <p class="card-text">Provide current weather and next 5-day forecast. Use OpenWeather API</p>
@@ -162,8 +162,8 @@
                             </div>
                         </div>
     
-                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card">
-                            <img src="./assets/images/workday-scheduler.png" class="card-img-top" alt="workday-scheduler">
+                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card bg-dark">
+                            <img src="./assets/images/workday-scheduler.png" class="card-img-top boorder rounded-3" alt="workday-scheduler">
                             <div class="card-body">
                                 <h2 class="card-title">Wrokday Scheduler</h2>
                                 <p class="card-text">Plan daily work. Save events and tasks for each hour.</p>
@@ -171,8 +171,8 @@
                             </div>
                         </div>
 
-                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card">
-                            <img src="./assets/images/employees-database.png" class="card-img-top" alt="employees-database">
+                        <div class="card col-lg-3 col-md-5 border border-light border-1 rounded-1 gallery-card bg-dark">
+                            <img src="./assets/images/employees-database.png" class="card-img-top boorder rounded-3" alt="employees-database">
                             <div class="card-body">
                                 <h2 class="card-title">Employees Database</h2>
                                 <p class="card-text">Command-line Content Management System for managing employees.</p>
@@ -189,17 +189,34 @@
 
         <section class="mt-5"  id="my-resume">
             <h2 class="text-light"> My Resume</h2>
-            <div class="border border-light border-1 rounded-3"></div>
+            <div>
+                <figure class="figure container-fluid" id="resume">
+                    <a href="./assets/download/Zhong_Zheng_resume.pdf" target="_blank" download>
+                        <img class="figure-img img-fluid border border-1 border-light rounded-3" src="./assets/images/resume-img.png" alt="Click to download My resume" id="resume-link">
+                    </a>
+                </figure>
+            </div>
         </section>
+
         <section class="mt-5" id="contect-me">
             <h2 class="text-light"> Contect Me</h2>
-            <div class="border border-light border-1 rounded-3"></div>
+            <div class="border border-light border-1 rounded-3">
+                <ul class="container row ">
+                    <li><a href="tel:+19175356885"></a></li>
+                    <li><a href="mailto:realzzkevin@gmail.com"></a></li>
+                    <li><a href="https://github.com/realzzkevin/" target="_blank"></a></li>
+                    <li><a href="https://www.linkedin.com/in/zhong-zheng-782884210/" target="_blank" ></a></li>
+                </ul>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-
+    <footer class="container">        
+        <p class="float-end">
+            <a href="#"> Back to top</a>
+        </p>
+        <p class="text-light"> Created by Zhong Zheng</p>
     </footer>
 
 
