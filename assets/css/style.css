@@ -51,13 +51,8 @@ nav {
     color: white;
 }
 
-
+/* use @media to control display options for nav dropdown menu and pill style menu*/
 @media screen and (min-width: 993px){
-
-    .works:first-child{
-        width:100%;
-        height:500px;
-    }
 
     #nav-dropdown, #navbarNavDarkDropdown{
         display: none;
@@ -67,11 +62,6 @@ nav {
 
 @media screen and (max-width:992px){
     
-    .works {
-        width: 46%;
-        height: 180px;
-    }
-
     #nav-dropdown {
         display: none;
     }

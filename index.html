@@ -11,10 +11,13 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>My Portfolio</title>
   </head>
+
   <body data-bs-spy="scroll" data-bs-target="#nav-bar-tabs">
     <header >
+        <!-- Bootstrap navbar css-->>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-            <div class="container-fluid">                
+            <div class="container-fluid">
+                <!-- dropdown navbar menu, displays under smartphone and tablet resolution-->>                
                 <div id="nav-dropdown">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -39,7 +42,7 @@
 
                 <a class="navbar-brand" href="#about-me"> <h2>Zhong Zheng</h2></a>          
 
-                
+                <!-- pill style navbar menu, only shows under desktop resolution. Notice scrollspy isn't working properly-->>
                 <div id="nav-bar-tabs">
                   <ul class="nav nav-pills justify-content-end mb-0" id="page-tab" role="tablist">
                     <li class="nav-item">
@@ -61,6 +64,7 @@
     </header>
 
     <main class="container-lg">
+        <!--About me section-->
         <section class="mt-5 container-lg" id="about-me">
             <h2 class="text-light">About Me</h2>
             <div id="bio card">
@@ -82,6 +86,7 @@
         <section class="mt-5" id="my-works">
             <h2 class=" text-light">My Works</h2>
             <div class="container pb-5 justify-content-center">
+                <!-- Bootstrap Carousel for showcase works, click to view deployed pages.-->>
                 <div class="my-works-carousel mt-2 container">
                     <div id="MyWorkCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -122,7 +127,8 @@
                         </button>
                     </div>
                 </div>
-    
+                
+                <!-- A group of pinned works. use Bootstrap card style. -->>
                 <div class="container mt-2 works-gallery text-light">
                 
                     <div class="row justify-content-between">
@@ -187,6 +193,7 @@
 
         </section>
 
+        <!--My resume section, click image to download resume.pdf file. Added Bootstrap Tooltip for instruction.-->
         <section class="mt-5"  id="my-resume">
             <h2 class="text-light"> My Resume</h2>
             <div>
@@ -198,6 +205,7 @@
             </div>
         </section>
 
+        <!--Contact information section. Use fornt awesome icon. Click to open link. Added Tooltip to show phone number and email address -->
         <section class="mt-5" id="contact-me">
             <h2 class="text-light"> Contact Me</h2>
             <div class="container border border-light border-1 rounded-3 py-2 bg-dark">
