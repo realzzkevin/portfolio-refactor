@@ -47,6 +47,9 @@ nav {
     color:antiquewhite;
 }
 
+.fas, .far, .fab {
+    color: white;
+}
 /*for display larger than 993 px, the first work car will take the first row.*/
 @media screen and (min-width: 993px){
 
